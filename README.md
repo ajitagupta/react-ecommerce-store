@@ -1,6 +1,6 @@
 # React Ecommerce Store
 
-![Static Badge](https://img.shields.io/badge/Ecommerce%Store-Project-blue) ![Static Badge](https://img.shields.io/badge/ReactJS-Learning%20React-green) ![Static Badge](https://img.shields.io/badge/ReactJS%20Frontend-Learning%20React-green)
+![Static Badge](https://img.shields.io/badge/Ecommerce%20Store-Project-blue) ![Static Badge](https://img.shields.io/badge/ReactJS-Learning%20React-green) ![Static Badge](https://img.shields.io/badge/ReactJS%20Frontend-Learning%20React-green)
 
 
 Welcome to the React Ecommerce Store! This project is a yellow-blue-schemed ecommerce website built using ReactJS for home and retail products.
