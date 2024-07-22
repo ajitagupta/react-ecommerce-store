@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+.about_section {
+    width: 100%;
+    float: left;
+    color: #5ba9ad;
+    font-size: 14px;
+    font-family: Poppins;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.layout_padding {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    position: relative; /* Add this to position the pseudo-element relative to this container */
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_1 img {
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about_taital {
+    font-size: 40px;
+    color: #020607;
+    padding-left: 20px;
+    padding-top: 0px;
+    text-align: left;
+    margin-top: -50px; /* Move the title 50px to the top */
+    position: relative; /* Ensure pseudo-element is positioned relative to this element */
+}
+
+.about_taital::after {
+    content: '';
+    position: absolute;
+    background-color: #f9ca16;
+    width: 10px;
+    height: 50px;
+    top: 50%;
+    left: -20px; /* Adjust this value as needed to position the line to the left of the text */
+    transform: translateY(-50%);
+}
+
+.about_text {
+    font-size: 16px;
+    color: #070402;
+    text-align: left;
+}
+
+.read_bt {
+    width: 170px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.read_bt a {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #13110f;
+    text-align: center;
+    padding: 8px 0px;
+    width: 100%;
+}
+
+.read_bt a:hover {
+    color: #070402;
+    background-color: #74d1ed;
+}

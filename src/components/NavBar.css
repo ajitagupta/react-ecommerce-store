@@ -1,0 +1,60 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  img   {
+    height: 60px;
+  }
+
+.searchbar_div {
+  float: right;
+  padding: 6px;
+  /*margin-top: 8px;*/
+  margin-right: 16px;
+  margin-top: 10px;
+  font-size: 17px;
+  background: #ddd;
+  display: inline-flex;
+  height: 32px;
+}
+
+.announcement_banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1666ac;
+  color: white;
+  font-size: 1.5em; /* 14px /16 */
+  padding: 0.5em 1em;
+}
+
+.right_topnav {
+  display: flex;
+  gap: 1em;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
