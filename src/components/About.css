@@ -1,27 +1,28 @@
 * {
     box-sizing: border-box !important;
     transition: ease all 0.5s;
+    font-family: sans-serif;
 }
 
 .about_section {
     width: 100%;
-    float: left;
     color: #5ba9ad;
     font-size: 14px;
-    font-family: Poppins;
-    line-height: 1.80857;
+    font-family: Poppins, sans-serif;
+    line-height: 1.8;
     font-weight: normal;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 50px 0;
 }
 
 .layout_padding {
-    padding-top: 0px;
-    margin-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
 }
 
 .container {
@@ -30,11 +31,12 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 1200px; /* Adjust as needed */
 }
 
 .row {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Changed to wrap for better responsiveness */
     margin-right: -15px;
     margin-left: -15px;
     justify-content: center;
@@ -47,6 +49,8 @@
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+    max-width: 50%; /* Ensures two columns layout */
+    box-sizing: border-box;
 }
 
 .content-column {
@@ -55,7 +59,6 @@
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    position: relative; /* Add this to position the pseudo-element relative to this container */
 }
 
 .image-column {
@@ -71,8 +74,8 @@
 }
 
 .image_1 img {
-    width: 450px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 450px;
     height: auto;
 }
 
@@ -80,10 +83,10 @@
     font-size: 40px;
     color: #020607;
     padding-left: 20px;
-    padding-top: 0px;
+    padding-top: 0;
     text-align: left;
-    margin-top: -50px; /* Move the title 50px to the top */
-    position: relative; /* Ensure pseudo-element is positioned relative to this element */
+    margin-top: 60px;
+    position: relative;
 }
 
 .about_taital::after {
@@ -93,7 +96,7 @@
     width: 10px;
     height: 50px;
     top: 50%;
-    left: -20px; /* Adjust this value as needed to position the line to the left of the text */
+    left: -20px;
     transform: translateY(-50%);
 }
 
@@ -108,6 +111,7 @@
     margin-top: 40px;
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 60px;
 }
 
 .read_bt a {
@@ -115,8 +119,9 @@
     color: #ffffff;
     background-color: #13110f;
     text-align: center;
-    padding: 8px 0px;
+    padding: 8px 0;
     width: 100%;
+    text-decoration: none;
 }
 
 .read_bt a:hover {

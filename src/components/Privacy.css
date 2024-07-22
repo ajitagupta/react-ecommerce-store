@@ -1,0 +1,40 @@
+/* Privacy.css */
+
+.privacy-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .privacy-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .privacy-content h1,
+  .privacy-content h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .privacy-content p {
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .privacy-content h1 {
+    border-bottom: 2px solid #f9ca16; /* Yellow color */
+    padding-bottom: 10px;
+  }
+  
+  .privacy-content h2 {
+    color: #f9ca16; /* Yellow color */
+  }
+  

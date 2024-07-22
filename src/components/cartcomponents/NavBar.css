@@ -34,4 +34,17 @@
     align-items: center;
   }
   
+ .nav_button {
+    background-color: #f9ca16;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+
+  }
   
+  .nav_button:hover {
+    background-color: #f8b700;
+  }

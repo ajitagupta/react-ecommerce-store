@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Cart.css';  // Make sure to import the CSS file
 
 const Cart = ({ cart, setCart, handlechange }) => {
   const [price, setPrice] = useState(0);
@@ -11,9 +12,7 @@ const Cart = ({ cart, setCart, handlechange }) => {
 
   const handlePrice = () => {
     let ans = 0;
-    cart.forEach((item) => {
-      ans += item.amount * item.price;
-    });
+    cart.map((item) => (ans += item.amount * item.price));
     setPrice(ans);
   };
 
@@ -23,23 +22,34 @@ const Cart = ({ cart, setCart, handlechange }) => {
 
   return (
     <div>
-      <article>
+      <br/>
+      <br/>
+      <div style={{textAlign: 'center'}}>
+        <h1>Your Shopping Cart</h1>
+        <p>Meet the internet's favourite skincare.</p>
+        <br/>
+      </div>
+
+      <article>  
         {cart.map((item) => (
-          <div key={item.id} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px 0' }}>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <img src={item.img} alt={item.name} style={{ width: '50px', height: '50px', marginRight: '10px' }} />
-              <p>{item.name}</p>
+          <div key={item.id} className='cart_box'>
+            <div className='cart_img'>
+              <p><img src={item.img} alt={item.name} /></p>
+              <p>{item.title}</p>
+            </div>
+            <div className='cart_controls'>
+              <button onClick={() => handlechange(item, 1)}>+</button>
+              <button className='amount'>{item.amount}</button>
+              <button onClick={() => handlechange(item, -1)}>-</button>
             </div>
             <div>
-              <button onClick={() => handlechange(item, 1)} style={{ margin: '5px' }}>+</button>
-              <button onClick={() => handlechange(item, -1)} style={{ margin: '5px' }}>-</button>
-              <button onClick={() => handleremove(item.id)} style={{ margin: '5px' }}>Remove</button>
+              <button onClick={() => handleremove(item.id)}>Remove</button>
             </div>
           </div>
         ))}
-        <div className="total" style={{ marginTop: '20px' }}>
+        <div className="total">
           <span>Total price of the cart: </span>
-          <span>$ {price}</span>
+          <span> = $ {price}</span>
         </div>
       </article>
     </div>

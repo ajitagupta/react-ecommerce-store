@@ -38,11 +38,11 @@ const NavBar = () => {
                 </div>
                 <div className='announcement_banner'>
                   <MenuIcon onClick={menuHandler}/>
-                  <span>SALE: 50% off on shoe items !!!</span>
+                  <span>Free shipping on orders $40+ !!!</span>
                   <div className='right_topnav'>
-                  <SearchIcon onClick={inputHandler}/>
+                  {/*<SearchIcon onClick={inputHandler}/>
                   <LocalMallIcon/>
-                  <ShoppingCartIcon />
+                  <ShoppingCartIcon />*/}
                   </div>
                 </div>
               </div>

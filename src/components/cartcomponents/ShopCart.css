@@ -1,0 +1,48 @@
+.card-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to the next line if they overflow */
+    gap: 20px; /* Adds space between the cards */
+    justify-content: center; /* Center the cards horizontally */
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image_box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px; /* Set a fixed width for the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+  }
+  
+  .image_box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .details {
+    padding: 16px;
+  }
+  
+  .details p {
+    margin: 0 0 10px;
+  }
+  
+  .details button {
+    background-color: #f9ca16;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .details button:hover {
+    background-color: #f8b700;
+  }
+  
