@@ -1,120 +1,48 @@
-* {
-    box-sizing: border-box !important;
-    transition: ease all 0.5s;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
+/* About.css */
 
-.about_section {
-    width: 100%;
-    color: #5ba9ad;
-    font-size: 14px;
-    font-family: Poppins, sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    overflow-x: hidden;
+.about-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 0;
-}
-
-.layout_padding {
-    padding-top: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-}
-
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1200px; /* Adjust as needed */
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap; /* Changed to wrap for better responsiveness */
-    margin-right: -15px;
-    margin-left: -15px;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-md-6 {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    max-width: 50%; /* Ensures two columns layout */
-    box-sizing: border-box;
-}
-
-.content-column {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    text-align: left;
-}
-
-.image-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image_1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image_1 img {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .about-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
     width: 100%;
-    max-width: 450px;
-    height: auto;
-}
-
-.about_taital {
-    font-size: 40px;
-    color: #020607;
-    padding-left: 20px;
-    padding-top: 0;
-    text-align: left;
-    margin-top: 60px;
-    position: relative;
-}
-
-.about_taital::after {
-    content: '';
-    position: absolute;
-    background-color: #f9ca16;
-    width: 10px;
-    height: 50px;
-    top: 50%;
-    left: -20px;
-    transform: translateY(-50%);
-}
-
-.about_text {
-    font-size: 16px;
-    color: #070402;
-    text-align: left;
-}
-
-.read_bt {
+    margin-right: 20px; /* Add spacing between text and image */
+  }
+  
+  .about-content h1,
+  .about-content p {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .about-content p {
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-content h1 {
+    border-bottom: 2px solid #f9ca16; /* Yellow color */
+    padding-bottom: 10px;
+  }
+  
+  .read_bt {
     width: 170px;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 60px;
-}
-
-.read_bt a {
+  }
+  
+  .read_bt a {
     font-size: 18px;
     color: #ffffff;
     background-color: #13110f;
@@ -122,9 +50,23 @@
     padding: 8px 0;
     width: 100%;
     text-decoration: none;
-}
-
-.read_bt a:hover {
+  }
+  
+  .read_bt a:hover {
     color: #070402;
     background-color: #74d1ed;
-}
+  }
+  
+  .about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px; /* Optional: to match the box's border radius */
+  }
+  
